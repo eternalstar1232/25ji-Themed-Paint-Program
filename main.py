@@ -551,7 +551,7 @@ leftBar = Rect(0,0,60,800)
 draw.rect(screen, DARKGREY, leftBar)
 draw.line(screen,OUTLINE,(60,0),(60,800))
 
-icon = image.load(resource_path(f"img/icon.png")
+icon = image.load(resource_path(f"img/icon.png"))
 icon = transform.scale(icon,(30,30))
 screen.blit(icon,(310,15))
 header = headFont.render("25-ji, Nightcord de. Themed Paint Program", True, OUTLINE)
@@ -571,7 +571,7 @@ for i in range (len(tools)):
     tool_Rects.append(rect)
     draw.rect(screen, GREY, rect)
     # load icons
-    img = image.load(resource_path(f"img/{tools[i]}.png")
+    img = image.load(resource_path(f"img/{tools[i]}.png"))
     img = transform.scale(img, (30,30))
     blit_center(screen,rect,img)
 
@@ -590,7 +590,7 @@ shape_img = []
 shapeTypeRects = []
 for i in range (len(shapeTypes)):
     shapeTypeRects.append(Rect(70+i*40,400,30,30))
-    img = image.load(resource_path(shape_images[i])
+    img = image.load(resource_path(shape_images[i]))
     img = transform.scale(img, (25,25))
     shape_img.append(img)
 
@@ -608,7 +608,7 @@ line_img = []
 lineTypeRects = []
 for i in range (len(lineTypes)):
     lineTypeRects.append(Rect(70+i*40,430,30,30))
-    img = image.load(resource_path(line_images[i])
+    img = image.load(resource_path(line_images[i]))
     img = transform.scale(img, (25,25))
     line_img.append(img)
 
@@ -620,7 +620,7 @@ for i in range (3):
     rect = Rect(10,530+i*50,40,40)
     function_Rects.append(rect)
     draw.rect(screen, GREY, rect)
-    img = image.load(resource_path(f"img/{functions[i]}.png")
+    img = image.load(resource_path(f"img/{functions[i]}.png"))
     img = transform.scale(img, (30,30))
     blit_center(screen,rect,img)
     
@@ -628,7 +628,7 @@ for i in range (2):
     rect = Rect(10,690+i*50,40,40)
     function_Rects.append(rect)
     draw.rect(screen, GREY, rect)
-    img = image.load(resource_path(f"img/{functions[3+i]}.png")
+    img = image.load(resource_path(f"img/{functions[3+i]}.png"))
     img = transform.scale(img, (30,30))
     blit_center(screen,rect,img)
 
@@ -682,7 +682,7 @@ draw.rect(screen, DARKGREY, stampBarRect)
 stamps = ["add","empty","stampMk1","stampMk2","stampKnd1","stampKnd2","stampMfy1","stampMfy2","stampEna1","stampEna2","stampMzk1","stampMzk2"]
 stamp_img = []
 for i in range (len(stamps)):
-    img = image.load(resource_path(f"img/{stamps[i]}.png")
+    img = image.load(resource_path(f"img/{stamps[i]}.png"))
     stamp_img.append(img)
 
 sizeRect = Rect (80,690,235,40)
