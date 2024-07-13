@@ -32,7 +32,5 @@ Edit(A few points)\:
 4. I received many suggestions, and most likely will not be implementing them. Too much work
 
    I would maybe downscale the canvas if possible, but I do not know how to do so in an effective way, without having to change all the numbers individually
-
-   neither do I know how to make "adjustable" windows
   
 (Sorry if I seem very "uneager-to-learn",, I appreciate all the advice but really have no energy to modify any further..)
