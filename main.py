@@ -397,12 +397,6 @@ def draw_code_tab():
 def rgb_to_hex(rgb):
     return '#{:02x}{:02x}{:02x}'.format(rgb[0], rgb[1], rgb[2])
 
-def datetime_as_filename():
-    '''gets the current date time and returns a string of pure numbers to save as file
-    '''
-    now = datetime.now()
-    return now.strftime("%d%m%Y%H%M%S")
-
 def draw_stamp():
     '''draws the stamp rects with offsets
     '''
@@ -704,7 +698,7 @@ while running:
         if evt.type == pygame.MOUSEWHEEL:
             # calculates offset
             if stampRect.collidepoint(mx,my):
-                offset += evt.y*10
+                offset -= evt.y*10
             
         if evt.type == MOUSEBUTTONDOWN: 
             
